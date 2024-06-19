@@ -1,6 +1,5 @@
-# Ignorar el archivo de configuración del entorno virtual
-venv/pyvenv.cfg
-# Ignorar las carpetas de librerías y scripts del entorno virtual
-venv/Lib/
-venv/Scripts/
-venv/share/
+# Ignorar todo el contenido dentro de 'venv'
+venv/*
+
+# Excepción para los archivos .py dentro de 'venv'
+!venv/**/*.py

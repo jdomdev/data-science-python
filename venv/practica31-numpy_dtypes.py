@@ -42,7 +42,7 @@ np.array([2**31-1])[0] + 1
 np.array([2**63-1])[0] + 1
 # <stdin>:1: RuntimeWarning: overflow encountered in scalar add
 # -9223372036854775808
-
+import numpy as np
 with np.errstate(over='raise'):
     print(np.array([2**31-1])[0]+1)
 # FloatingPointError: overflow encountered in scalar add
@@ -50,5 +50,6 @@ with np.errstate(over='raise'):
 with np.errstate(over='ignore'):
     print(np.array([2**31-1])[0]+1)
 # -2147483648
-
-# Página 6 >>>
+import numpy as np
+a = np.array([10], dtype=object)
+len(str(a**1000))
