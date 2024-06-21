@@ -113,18 +113,90 @@ sys.getsizeof(True)
 # 4. CADENAS
 # ----------
 
-
 np.array(['abcde', 'x', 'y', 'x'])
 # = array(['abcde', 'x', 'y', 'x'], dtype='<U5')
 
+import numpy as np
+np.array(['abcde', 'x', 'y', 'x'])
+# = array(['abcde', 'x', 'y', 'x'], dtype='<U5')
+
+np.array(['abcde', 'x', 'y', 'x'], object)
+# = array(['abcde', 'x', 'y', 'x'], dtype=object)
+
+np.array([b'abcde', b'x', b'y', b'x'])
+# = array([b'abcde', b'x', b'y', b'x'], dtype='|S5')
+
+np.char.upper(np.array([['a','b'],['c','d']]))
+# = array([['A', 'B'],
+#       ['C', 'D']], dtype='<U1')
+
+a = np.array([['a','b'],['c','d']], object)
+np.vectorize(lambda x: x.upper(), otypes=[object])(a)
+# = array([['A', 'B'],
+#       ['C', 'D']], dtype=object)
+
+
+# 5. DATETIMES
+# ------------
+
+np.datetime64('today')
+# = numpy.datetime64('2024-06-20')
+
+np.datetime64('now')
+# = numpy.datetime64('2024-06-20T18:03:45')
+
+import datetime as dt
+dt = dt.datetime.utcnow()
+np.datetime64(dt)
+# = numpy.datetime64('2024-06-20T18:11:55.780089')
+
+np.datetime64('2024-06-20 18:11:55.780089836')
+# = numpy.datetime64('2024-06-20T18:11:55.780089836')
+
+np.datetime64(dt.utcnow(), 'ns')
+# = numpy.datetime64('2024-06-20T18:19:32.911035000')
+
+a = np.array([dt.utcnow()], dtype='datetime64[100ms]'); a
+# = array(['2024-06-20T18:21:52.800'], dtype='datetime64[100ms]')
+
+a + 1
+# = array(['2024-06-20T18:21:52.900'], dtype='datetime64[100ms]')
+
+a[0].dtype
+# = dtype('<M8[100ms]')
+
+np.datetime_data(a[0])
+# = ('ms', 100)
+
+z = np.datetime64('2022-01-01') - np.datetime64(dt.now()); z
+# = numpy.timedelta64(-77921524649541,'us')
+
+z.item() 
+# = datetime.timedelta(days=-902, seconds=11275, microseconds=350459)
+
+z.item().total_seconds()
+# = -77921524.649541
+
+np.datetime64('2022-01-01') - np.datetime64(dt.now(), 's')
+# = numpy.timedelta64(-77920458,'s')
+
+np.datetime64('2021-12-24 18:14:23').item()
+# = datetime.datetime(2021, 12, 24, 18, 14, 23)
+
+np.datetime64('2021-12-24 18:14:23').item().month
+# = 12
+
+a = np.arange(np.datetime64('2021-01-20'),
+                np.datetime64('2021-12-20'),
+                np.timedelta64(90, 'D')); a
+# = array(['2021-01-20', '2021-04-20', '2021-07-19', '2021-10-17'],
+#      dtype='datetime64[D]')
+
+(a.astype('M8[M]') - a.astype('M8[Y]')).view(np.int64)
+# = array([0, 3, 6, 9], dtype=int64)
 
 
 
 
-
-
-
-
-
-
-
+import pandas as pd
+s = pd.DatetimeIndex(a); s
