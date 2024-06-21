@@ -1,5 +1,8 @@
-# Ignorar todo el contenido dentro de 'venv'
+# Ignorar todo el contenido dentro del entorno virtual:
 venv/*
-
-# Excepción para los archivos .py dentro de 'venv'
+practica31-numpy_dtypes/*
+practica33-broadcasting/*
+# Excepción para los archivos [].py, .ipynb] dentro del entorno:
 !venv/**/*.py
+!practica31-numpy_dtypes/**/*.py
+!practica33-broadcasting/**/*.ipynb
