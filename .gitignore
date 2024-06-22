@@ -2,5 +2,5 @@
 practica31-numpy_dtypes/*
 practica33-broadcasting/*
 # Excepción para los archivos [.py, .ipynb] dentro del entorno:
-!practica31-numpy_dtypes/**/practica31-numpy_dtypes.py
-!practica33-broadcasting/**/practica33-broadcasting.ipynb
+!practica31-numpy_dtypes/venv/practica31-numpy_dtypes.py
+!practica33-broadcasting/venv/practica33-broadcasting.ipynb
