@@ -1,9 +1,10 @@
-# PYTHON PARA CIENCIA DE DATOS.
-Módulos sobre Python y algunas de sus bibliotecas como Numpy, Pandas, Matplotlib y Ploty, dentro del ámbito de Ciencia de Datos.
+# PYTHON PARA CIENCIA DE DATOS
+Prácticas de los módulos sobre Python y las bibliotecas Numpy, Pandas, Matplotlib y Ploty, en el marco de la Ciencia de Datos.
 
 
+## TEMARIO
 
-## Modulo 6. Programación en Python
+### Modulo 6. Programación en Python
 Variables y tipos de datos en Python. Operaciones aritméticas y lógicas.
 Condicionales (if, else, elif) en Python. Bucles (while, for) y estructuras anidadas.
 Trabajo con listas y operaciones comunes. Indexación y segmentación de listas.
@@ -15,7 +16,7 @@ Python. Funciones lambda. Uso de funciones de orden superior (map, reduce,
 filter).
 
 
-## Modulo 6(II). Programación en Python
+### Modulo 6(II). Programación en Python
 Archivos, excepciones y expresiones regulares. Lectura y escritura de archivos en
 Python (ficheros). Manejo de excepciones y errores. Patrones y búsqueda de texto.
 Programación orientada a objetos. Definición de clases y creación de objetos.
@@ -24,7 +25,7 @@ abstracción.
 Bases de datos con SQLite y pymongo.
 
 
-## Módulo 7. Preprocesamiento y limpieza de datos. Numpy y Pandas
+### Módulo 7. Preprocesamiento y limpieza de datos. Numpy y Pandas
 Fundamentos de Numpy.
 Introducción al Data Wrangling y Preprocesamiento de Datos. Conceptos
 Fundamentales. Herramientas y entorno de trabajo en Python para el wrangling de
@@ -39,14 +40,14 @@ Avanzada. Imputación de datos faltantes. Visualización de valores atípicos y 
 faltantes. Técnicas avanzadas para tratar valores atípicos y faltantes.
 
 
-## Módulo 7(II). Preprocesamiento y limpieza de datos. Numpy y Pandas 
+### Módulo 7(II). Preprocesamiento y limpieza de datos. Numpy y Pandas 
 Procesamiento de Datos Temporales y Geoespaciales. Manejo de datos temporales
 con pandas. Análisis de series temporales. Geoespacial y GIS con GeoPandas.
 Optimización y Rendimiento en el Data Wrangling. Técnicas de optimización en el
 wrangling de datos. Uso de la concurrencia y paralelismo.
 
 
-## Modulo 8. Visualización de datos con Matplotlib
+### Modulo 8. Visualización de datos con Matplotlib
 Visualización con Matplotlib. Conceptos básicos de Matplotlib. Creación de
 gráficos de línea y área, barras y columnas, dispersión y burbujas, caja y bigotes.
 Personalización de gráficos y etiquetas.
