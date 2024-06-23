@@ -1,6 +1,6 @@
 # Ignorar todo el contenido dentro del entorno virtual:
-practica31-numpy_dtypes/*
-practica33-broadcasting/*
+pract31-numpy_dtypes/*
+pract33-broadcasting/*
 # Excepción para los archivos [.py, .ipynb] dentro del entorno:
-!practica31-numpy_dtypes/venv/practica31-numpy_dtypes.py
-!practica33-broadcasting/venv/practica33-broadcasting.ipynb
+!pract31-numpy_dtypes/src/p31-numpy_dtypes.py
+!pract33-broadcasting/src/p33-broadcasting.ipynb
