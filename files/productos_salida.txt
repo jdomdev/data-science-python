@@ -1,0 +1,4 @@
+1;Laptop;999.99;15
+2;Smartphone;499.99;30
+3;Tablet;299.99;25
+4;Smartwatch;199.99;40
