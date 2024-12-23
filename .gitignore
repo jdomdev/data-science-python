@@ -1,6 +1,44 @@
-# Ignorar todo el contenido dentro del entorno virtual:
-pract31-numpy_dtypes/*
-pract33-broadcasting/*
-# Excepción para los archivos [.py, .ipynb] dentro del entorno:
-!pract31-numpy_dtypes/src/p31-numpy_dtypes.py
-!pract33-broadcasting/src/p33-broadcasting.ipynb
+
+---
+
+### Archivo `.gitignore`
+
+```plaintext
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Entornos de Anaconda
+env/
+*.conda
+*.env
+*.venv
+*.virtualenv
+
+# Archivos de configuración y logs
+*.log
+*.pyc
+__pycache__/
+*.pyo
+*.out
+*.cache
+
+# Archivos de datos temporales
+*.csv
+*.json
+*.xls
+*.xlsx
+datasets/*_tmp.*
+
+# Archivos específicos del sistema operativo
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Archivos generados por Jupyter
+*.nbconvert/
+*.nbconvert.log
+
+# Configuraciones específicas del entorno de desarrollo
+.idea/
+.vscode/
+
